@@ -25,7 +25,7 @@ Services = {
         }
     },
 
-    retrieveWeatherData: function (city, state, cb) {
+    retrieveWeatherData: function (coordinates, cb) {
         var apiString,
             apiStringParams;
 
@@ -33,7 +33,8 @@ Services = {
         apiString = 'http://api.openweathermap.org/data/2.5/weather';
         apiStringParams = {
             params: {
-                q: city + ',' + state
+                lat: coordinates.latitude,
+                lon: coordinates.longitude
             }
         };
 
@@ -102,7 +103,7 @@ Services = {
 
                     trafficData = {
                         severityAvg: severityTotal / trafficResources.length,
-                        incidentTypesOrdered: trafficTypes
+                        incidentTypesOrdered: incidentTypes
                     };
 
                     cb(null, trafficData);

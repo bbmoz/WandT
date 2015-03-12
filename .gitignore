@@ -1,2 +1,6 @@
 /* Development Environment */
 .idea
+
+/* Tests */
+*.package-stubs.js
+*.packageMocksSpec.js
