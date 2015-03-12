@@ -9612,7 +9612,7 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "t2JuSr2WRA5B7JFCa"
+          "value": "nD8vvmoDoQii2FwCd"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
@@ -9979,7 +9979,7 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 24155
+                  "value": 24444
                 },
                 "fout": {
                   "type": "constant",
@@ -10002,7 +10002,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 24155
+                      "value": 24444
                     },
                     "stdin": {
                       "type": "null",

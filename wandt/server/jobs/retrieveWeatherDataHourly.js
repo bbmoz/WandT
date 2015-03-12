@@ -13,5 +13,5 @@
         });
     }
 
-    Meteor.setInterval(queryForWeatherData, 5000);
+    Meteor.setInterval(queryForWeatherData, 3600000);
 }());
