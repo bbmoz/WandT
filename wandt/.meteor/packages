@@ -11,3 +11,4 @@ iron:router
 velocity:html-reporter
 http
 jquery
+mquandalle:bower

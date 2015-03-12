@@ -7,17 +7,51 @@ Services = {
 
         try {
             HTTP.call('GET', apiString, function (error, cityInfo) {
-                if (!error && cityInfo && cityInfo.data && cityInfo.data[0]) {
-                    cityData.latitude = +cityInfo.data[0].primary_latitude;
-                    cityData.longitude = +cityInfo.data[0].primary_longitude;
+                var cityInfoData = cityInfo.data;
+
+                if (!error && cityInfo && cityInfoData && cityInfoData[0]) {
+                    cityData.latitude = +cityInfoData[0].primary_latitude;
+                    cityData.longitude = +cityInfoData[0].primary_longitude;
                     cb(null, cityData);
                 } else {
-                    console.log(cityData);
                     cb({ error: error, apiString: apiString, cityData: cityData });
                 }
             });
         } catch (ex) {
             cb({ error: ex, apiString: apiString, cityData: cityData });
+        }
+    },
+
+    retrieveWeatherData: function (city, state, cb) {
+        // http://www.openweathermap.com/current
+        var apiString = 'http://api.openweathermap.org/data/2.5/weather';
+        var apiStringParams = {
+            params: {
+                q: city + ',' + state
+            }
+        };
+
+        try {
+            HTTP.call('GET', apiString, apiStringParams, function (error, weatherInfo) {
+                var weatherData,
+                    weatherInfoData = weatherInfo.data;
+
+                if (!error && weatherInfo && weatherInfoData) {
+                    weatherData = {
+                        main: weatherInfoData.weather[0].main,
+                        description: weatherInfoData.weather[0].description,
+                        temperature: weatherInfoData.main.temp,
+                        humidityPercent: weatherInfoData.main.humidity,
+                        windSpeed: weatherInfoData.wind.speed,
+                        cloudPercent: weatherInfoData.clouds.all
+                    };
+                    cb(null, weatherData);
+                } else {
+                    cb({ error: error, apiString: apiString, params: apiStringParams });
+                }
+            });
+        } catch (ex) {
+            cb({ error: ex, apiString: apiString, params: apiStringParams });
         }
     }
 };
