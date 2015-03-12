@@ -10,3 +10,4 @@ peerlibrary:async
 iron:router
 velocity:html-reporter
 http
+jquery
