@@ -1,5 +1,8 @@
 Router.configure({
-    layoutTemplate: 'layout'
+    layoutTemplate: 'layout',
+    waitOn: function () {
+        return [Meteor.subscribe('cities')];
+    }
 });
 
 Router.route('/', {

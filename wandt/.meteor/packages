@@ -9,3 +9,4 @@ sanjo:jasmine
 peerlibrary:async
 iron:router
 velocity:html-reporter
+http
