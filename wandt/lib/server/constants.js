@@ -49,5 +49,7 @@ Constants = {
         {city: 'Cleveland', state: 'OH'},
         {city: 'Wichita', state: 'KS'},
         {city: 'Arlington', state: 'TX'}
-    ]
+    ],
+
+    bingMapsKey: 'As4LR-reY66b4845g6XwhYJzn2N0E79hWuF_66t8wK3LxNb7ISqoo6gFTj_58qEj'
 };
