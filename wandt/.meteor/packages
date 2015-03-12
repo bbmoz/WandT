@@ -12,3 +12,4 @@ velocity:html-reporter
 http
 jquery
 mquandalle:bower
+sacha:spin

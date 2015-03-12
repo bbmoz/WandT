@@ -94,7 +94,7 @@ Services = {
 
                     trafficResources.forEach(function (incident) {
                         severityTotal += incident.severity;
-                        incidentTypes[incident.type - 1] += 1;
+                        incidentTypes[incident.type - 1].val += 1;
                     });
 
                     incidentTypes.sort(function (prev, cur) {

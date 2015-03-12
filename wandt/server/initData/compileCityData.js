@@ -5,6 +5,8 @@
 
             retrieveCoordinatesAndAssignBoundingBox(cityAndState, function (error, cityData) {
                 if (!error) {
+                    cityData.weatherData = {};
+                    cityData.trafficData = {};
                     Cities.insert(cityData);
                 }
             });
