@@ -4,3 +4,7 @@
 /* Auto-generated Tests */
 wandt/tests/jasmine/server/unit/package-stubs.js
 wandt/tests/jasmine/server/unit/packageMocksSpec.js
+
+/* packages */
+wandt/.gulp/node_modules
+wandt/packages
