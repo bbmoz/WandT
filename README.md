@@ -3,9 +3,13 @@ A live weather and traffic heat map of the most populated cities in the United S
 
 <h3>Main Stack Actors</h3>
 - Meteor (full-stack framework) w/ MongoDB (database)
+- Velocity (test runner)
+  - Jasmine (unit and integration testing)
 - Bower (client dependency management)
   - D3.js (data visualization library)
-- Jasmine (unit and integration testing)
+- Gulp (task runner) in conjunction with Isobuild
+  - Sass (stylesheet preprocessor) w/ Autoprefixer (vendor prefixing)
+  - JSHint (javascript linting)
 
 <h3>External API's Used</h3>
 - <a href="https://msdn.microsoft.com/en-us/library/ff701713.aspx">Bing Maps REST Services</a> for traffic data (hourly)
