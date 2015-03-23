@@ -1,7 +1,7 @@
 <h1><b>WandT: Weather and Traffic Live Map</b></h1>
 <i>Live weather and traffic visualization of the most populated cities in the United States</li>
 
-<h3>Setup before running Meteor</h3>
+<h3>Setup Before Meteor</h3>
 ```bash
 >> make setup   # Install non-Meteor NPM packages.
 >> make map     # Download, unzip, and convert the U.S. shapefile into TopoJSON.
