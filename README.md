@@ -3,7 +3,7 @@
 
 <h3>Setup Before Meteor</h3>
 ```bash
->> make setup   # Install non-Meteor NPM packages.
+>> make setup   # Install NPM TopoJSON and Gulp dependencies.
 >> make map     # Download, unzip, and convert the U.S. shapefile into TopoJSON.
 ```
 
@@ -11,7 +11,7 @@
 - Meteor (full-stack framework)
 - Jasmine (unit and integration testing)
 - Bower (client dependency management)
-  - D3.js (data visualization library)
+  - D3.js (data visualization library) w/ TopoJSON
 - Gulp (task runner)
   - Sass (stylesheet preprocessor) w/ Autoprefixer (vendor prefixing)
   - JSHint (javascript linting)
