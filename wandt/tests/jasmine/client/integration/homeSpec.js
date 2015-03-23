@@ -1,3 +1,4 @@
+/*
 describe('home', function () {
     describe('template', function () {
         it('shows heading', function () {
@@ -5,3 +6,4 @@ describe('home', function () {
         });
     });
 });
+*/

@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     srcs, dests;
 
 srcs = {
-    lint: ['./../client/**/*.js', './../lib/**/*.js', './../server/**/*.js'],
+    lint: ['./../client/templates/**/*.js', './../lib/**/*.js', './../server/**/*.js'],
     sass: './../private/sass/**/*.{scss,sass}'
 };
 

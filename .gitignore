@@ -5,6 +5,12 @@
 wandt/tests/jasmine/server/unit/package-stubs.js
 wandt/tests/jasmine/server/unit/packageMocksSpec.js
 
-/* packages */
+/* Packages */
+node_modules
 wandt/.gulp/node_modules
+wandt/.gulp/tests
 wandt/packages
+
+/* Miscellaneous */
+wandt/private/shapefiles
+Makefile~

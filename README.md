@@ -1,13 +1,18 @@
 <h1><b>WandT: Weather and Traffic Live Map</b></h1>
 <i>Live weather and traffic visualization of the most populated cities in the United States</li>
 
+<h3>Setup before running Meteor</h3>
+```bash
+>> make setup   # Install non-Meteor NPM packages.
+>> make map     # Download, unzip, and convert the U.S. shapefile into TopoJSON.
+```
+
 <h3>Main Stack Actors</h3>
-- Meteor (full-stack framework) w/ MongoDB (database)
-- Velocity (test runner)
-  - Jasmine (unit and integration testing)
+- Meteor (full-stack framework)
+- Jasmine (unit and integration testing)
 - Bower (client dependency management)
   - D3.js (data visualization library)
-- Gulp (task runner) in conjunction with Isobuild
+- Gulp (task runner)
   - Sass (stylesheet preprocessor) w/ Autoprefixer (vendor prefixing)
   - JSHint (javascript linting)
 
@@ -17,7 +22,7 @@
 - <a href="https://www.sba.gov/about-sba/sba-performance/sba-data-store/web-service-api/us-city-and-county-web-data-api">SBA Web Service API</a> for coordinates
 
 <h3>City Data Structure</h3>
-```
+```javascript
 {
   city: [string],
   latitude: [number],

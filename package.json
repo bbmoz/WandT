@@ -1,8 +1,8 @@
 {
-    "name": "WandT-bower",
+    "name": "WandT-make",
     "private": true,
     "version": "0.0.1",
     "dependencies": {
-        "d3": "3.5.5"
+        "topojson": "1"
     }
 }
