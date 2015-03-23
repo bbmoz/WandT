@@ -63,7 +63,7 @@
 
 <h3>Cities Being Tracked</h3>
 <i>Taken from http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population</i>
-```
+```javascript
 cities: [
     { city: 'New York', state: 'NY' },
     { city: 'Los Angeles', state: 'CA' },
