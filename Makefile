@@ -21,5 +21,5 @@ map:
 	node_modules/.bin/topojson \
 		-o $(json_path) \
 		--projection='width = 960, height = 600, d3.geo.albersUsa().scale(1280).translate([width / 2, height / 2])' \
-		--simplify=.5 \
+		--simplify=.01 \
 		-- counties=$(unzip_path)

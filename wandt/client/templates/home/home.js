@@ -1,9 +1,16 @@
 Template.home.rendered = function () {
-    var sampleSvg = d3.select('.viz')
-        .append('svg')
-        .attr('width', 410)
-        .attr('height', 410);
+    var width, height, path, svg;
 
+    width = 960;
+    height = 600;
+    path = d3.geo.path().projection(null);
+    svg = d3.select('.viz').append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    //d3.json('./../')
+
+    /*
     sampleSvg.append('circle')
         .style('stroke', 'gray')
         .style('fill', 'white')
@@ -28,4 +35,5 @@ Template.home.rendered = function () {
                 .attr('r', 40)
                 .style('fill', 'white');
         });
+    */
 };

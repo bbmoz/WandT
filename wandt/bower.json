@@ -1,8 +1,9 @@
 {
-    "name": "WandT-bower",
-    "private": true,
-    "version": "0.0.1",
-    "dependencies": {
-        "d3": "3.5.5"
-    }
+  "name": "WandT-bower",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "d3": "3.5.5",
+    "topojson": "~1.6.18"
+  }
 }
