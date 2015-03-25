@@ -10,7 +10,7 @@
 
     // Enforcing
     "bitwise"       : true,     // true: Prohibit bitwise operators (&, |, ^, etc.)
-    "camelcase"     : true,     // true: Identifiers must be in camelCase
+    "camelcase"     : false,     // true: Identifiers must be in camelCase
     "curly"         : true,     // true: Require {} for every new block or scope
     "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
     "forin"         : true,     // true: Require filtering for..in loops with obj.hasOwnProperty()
@@ -22,20 +22,20 @@
     "noempty"       : true,     // true: Prohibit use of empty blocks
     "nonew"         : true,    // true: Prohibit use of constructors for side-effects (without assignment)
     "plusplus"      : true,    // true: Prohibit use of `++` & `--`
-    "quotmark"      : "double",    // Quotation mark consistency:
+    "quotmark"      : "single",    // Quotation mark consistency:
     //   false    : do nothing (default)
     //   true     : ensure whatever is used is consistent
     //   "single" : require single quotes
     //   "double" : require double quotes
     "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
     "unused"        : true,     // true: Require all defined variables be used
-    "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+    "strict"        : false,     // true: Requires all functions run in ES5 Strict Mode
     "trailing"      : true,     // true: Prohibit trailing whitespaces
     "maxparams"     : false,    // {int} Max number of formal params allowed per function
     "maxdepth"      : false,    // {int} Max depth of nested blocks (within functions)
     "maxstatements" : false,    // {int} Max number statements per function
     "maxcomplexity" : false,    // {int} Max cyclomatic complexity per function
-    "maxlen"        : 80,       // {int} Max number of characters per line
+    "maxlen"        : 160,       // {int} Max number of characters per line
 
     // Relaxing
     "asi"           : false,     // true: Tolerate Automatic Semicolon Insertion (no semicolons)
@@ -113,6 +113,21 @@
         "Npm": false,
         "_": false,
         "$": false,
-        "Router": false
+        "Router": false,
+        // Jasmine
+        "Jasmine": false,
+        "expect": false,
+        "describe": false,
+        "it": false,
+        // external
+        "async": false,
+        "topojson": false,
+        "d3": false,
+        // Custom
+        "DataUtils": true,
+        "Services": true,
+        "Cities": true,
+        "Constants": true,
+        "Errors": true
     }
 }
