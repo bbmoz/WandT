@@ -5,7 +5,7 @@
 setup:
 	# Install non-Meteor NPM packages.
 	sudo npm install
-	(cd wandt/.gulp && sudo npm install)
+	(cd wandt/.gulp/ && sudo npm install)
 
 zip_path = wandt/private/shapefiles/gz_2010_us_050_00_500k/gz_2010_us_050_00_500k.zip
 unzip_path = wandt/private/shapefiles/gz_2010_us_050_00_500k/gz_2010_us_050_00_500k.shp
@@ -24,7 +24,10 @@ map:
 		--simplify=.01 \
 		-- counties=$(unzip_path)
 
+	# 3. Remove artifacts.
+	rm $(dir $(zip_path))/gz_2010_us_050_00_500k.zip $(dir $(zip_path))/gz_2010_us_050_00_500k.dbf $(dir $(zip_path))/gz_2010_us_050_00_500k.prj $(dir $(zip_path))/gz_2010_us_050_00_500k.shp $(dir $(zip_path))/gz_2010_us_050_00_500k.shx $(dir $(zip_path))/gz_2010_us_050_00_500k.xml
+
 setup-nosudo:
 	# Install non-Meteor NPM packages.
 	npm install
-	(cd wandt/.gulp && npm install)
+	(cd wandt/.gulp/ && npm install)
