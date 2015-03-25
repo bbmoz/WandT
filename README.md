@@ -117,3 +117,6 @@ cities: [
     { city: 'Arlington', state: 'TX' }
 ]
 ```
+
+<h3>Resources</h3>
+- 
