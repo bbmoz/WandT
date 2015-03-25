@@ -1,4 +1,3 @@
-
 (function homeTemplate() {
     /* RENDERED */
     Template.home.rendered = function () {
@@ -18,32 +17,5 @@
                 .attr('fill', 'white')
                 .attr('d', path);
         });
-
-        /*
-         sampleSvg.append('circle')
-         .style('stroke', 'gray')
-         .style('fill', 'white')
-         .attr('r', 40)
-         .attr('cx', 205)
-         .attr('cy', 205)
-         .on('mouseover', function () {
-         d3.select(this).transition().ease('linear')
-         .duration(1000)
-         .attr('r', 100)
-         .style('fill', 'blue')
-         .each('end', function () {
-         d3.select(this).transition().ease('linear')
-         .duration(1000)
-         .attr('r', 200)
-         .style('fill', 'pink');
-         });
-         })
-         .on('mouseout', function () {
-         d3.select(this).transition().ease('linear')
-         .duration(2000)
-         .attr('r', 40)
-         .style('fill', 'white');
-         });
-         */
     };
 }());
