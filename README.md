@@ -22,7 +22,7 @@
 - <a href="http://www.openweathermap.com/api">OpenWeatherMap Developers API</a> for weather data (hourly)
 - <a href="https://www.sba.gov/about-sba/sba-performance/sba-data-store/web-service-api/us-city-and-county-web-data-api">SBA Web Service API</a> for coordinates
 
-<h3>City Data Structure</h3>
+<h3>Compiled City Data Structure</h3>
 ```javascript
 {
   city: [string],
@@ -63,7 +63,6 @@
 ```
 
 <h3>Cities Being Tracked</h3>
-<i>Taken from http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population</i>
 ```javascript
 cities: [
     { city: 'New York', state: 'NY' },
@@ -119,4 +118,4 @@ cities: [
 ```
 
 <h3>Resources</h3>
-- 
+- Docker Hub repository [link]
