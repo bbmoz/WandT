@@ -18,9 +18,7 @@ dests = {
 gulp.task('lint', function () {
     return gulp.src(srcs.lint)
         .pipe(jshint())
-        .pipe(jshint.reporter('default'), {
-            verbose: true
-        })
+        .pipe(jshint.reporter('default'))
         .pipe(jshint.reporter('fail'));
 });
 
