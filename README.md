@@ -1,4 +1,4 @@
-![CodeShip Status](https://codeship.com/projects/4c106dc0-b304-0132-b46b-6a71bba51758/status?branch=master)
+![CodeShip Status](https://codeship.com/projects/ba260110-b61d-0132-8efb-127341985930/status?branch=master)
 <h1><b>WandT: Weather and Traffic Live Map</b></h1>
 <i>Live weather and traffic visualization of the most populated cities in the United States</li>
 
