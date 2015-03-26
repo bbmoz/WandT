@@ -123,6 +123,7 @@
         "async": false,
         "topojson": false,
         "d3": false,
+        "Kadira": false,
         // Custom
         "DataUtils": true,
         "Services": true,

@@ -14,8 +14,12 @@
 - Bower (client dependency management)
   - D3.js (data visualization library) w/ TopoJSON
 - Gulp (task runner)
-  - Sass (stylesheet preprocessor) w/ Autoprefixer (vendor prefixing)
+  - Sass (stylesheet preprocessor) w/ Autoprefixer
   - JSHint (javascript linting)
+
+<h3>Main External Integrations</h3>
+- Codeship (continuous integration) w/ Docker
+- Kadira (performance monitoring)
 
 <h3>External API's Used</h3>
 - <a href="https://msdn.microsoft.com/en-us/library/ff701713.aspx">Bing Maps REST Services</a> for traffic data (hourly)
