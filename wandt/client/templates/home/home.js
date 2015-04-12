@@ -11,10 +11,8 @@
             .attr('height', height);
 
         Meteor.call('getMapData', function (error, mapData) {
-            svg.append('path').datum(topojson.mesh(mapData))
-                .attr('stroke', '#00001d')
-                .attr('stroke-width', '.5px')
-                .attr('fill', 'white')
+            svg.append('path')
+                .datum(topojson.mesh(mapData))
                 .attr('d', path);
         });
     };
