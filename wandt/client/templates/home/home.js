@@ -16,7 +16,12 @@
         .attr('d', path);
 
       svg.selectAll('.pin')
-      
+        .data(Cities.find().fetch())
+        .enter().append('circle', '.pin')
+        .attr('r', 3)
+        .attr('transform', function (point) {
+          return 'translate(' + point.longitude + ',' + point.latitude + ')';
+        });
     });
   };
 }());
