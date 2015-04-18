@@ -1,6 +1,6 @@
 Meteor.methods({
-    getMapData: function () {
-        var json = Assets.getText('shapefiles/gz_2010_us_050_00_500k/counties.json');
-        return JSON.parse(json);
-    }
+  getMapData: function () {
+    var json = Assets.getText('shapefiles/cb_2013_us_state_500k/states.json');
+    return JSON.parse(json);
+  }
 });

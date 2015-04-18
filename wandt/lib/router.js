@@ -1,15 +1,15 @@
 Router.configure({
-    layoutTemplate: 'layout',
-    loadingTemplate: 'loading',
-    waitOn: function () {
-        return [Meteor.subscribe('cities')];
-    }
+  layoutTemplate: 'layout',
+  loadingTemplate: 'loading',
+  waitOn: function () {
+    return [Meteor.subscribe('cities')];
+  }
 });
 
 Router.route('/', {
-    name: 'home'
+  name: 'home'
 });
 
 Router.route('/about', {
-    name: 'about'
+  name: 'about'
 });
