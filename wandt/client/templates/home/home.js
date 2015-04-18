@@ -11,12 +11,15 @@
       .attr('height', height);
 
     Meteor.call('getMapData', function (error, mapData) {
+      var cities;
+
       svg.append('path')
         .datum(topojson.mesh(mapData))
         .attr('d', path);
 
+      cities = Cities.find().fetch();
       svg.selectAll('.pin')
-        .data(Cities.find().fetch())
+        .data(cities)
         .enter().append('circle', '.pin')
         .attr('r', 3)
         .attr('transform', function (point) {
