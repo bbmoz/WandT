@@ -1,11 +1,14 @@
 (function homeTemplate() {
   /* RENDERED */
   Template.home.rendered = function () {
-    var width, height, path, svg;
+    var width = 960,
+        height = 600,
+        actualProjection,
+        targetedProjection,
+        svg;
 
-    width = 960;
-    height = 600;
-    projection = d3.geo.path().projection(null);
+    actualProjection = d3.geo.path().projection(null);
+    targetedProjection = d3.geo.albersUsa().scale(1280).translate([width / 2, height / 2]);
     svg = d3.select('.viz').append('svg')
       .attr('width', width)
       .attr('height', height);
@@ -15,15 +18,18 @@
 
       svg.append('path')
         .datum(topojson.mesh(mapData))
-        .attr('d', projection);
+        .attr('d', actualProjection);
 
       cities = Cities.find().fetch();
-      svg.selectAll('.pin')
+
+      svg.selectAll('circle')
         .data(cities)
-        .enter().append('circle', '.pin')
-        .attr('r', 3)
+        .enter().append('circle')
+        .attr('r', 5)
         .attr('transform', function (point) {
-          return 'translate(' + point.longitude + ',' + point.latitude + ')';
+          return 'translate(' +
+            targetedProjection([point.longitude, point.latitude]) +
+          ')';
         });
     });
   };

@@ -1,6 +1,10 @@
 path {
-    fill: none;
-    stroke: #555;
-    stroke-linejoin: round;
-    stroke-linecap: round;
+  fill: none;
+  stroke: #555;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: steelblue;
 }
