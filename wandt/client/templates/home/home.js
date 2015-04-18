@@ -18,6 +18,7 @@
 
       svg.append('path')
         .datum(topojson.mesh(mapData))
+        .attr('class', 'state-map')
         .attr('d', actualProjection);
 
       cities = Cities.find().fetch();

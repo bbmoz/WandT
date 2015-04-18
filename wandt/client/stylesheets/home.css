@@ -1,10 +1,8 @@
-path {
-  fill: none;
-  stroke: #555;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
 circle {
   fill: steelblue;
+}
+
+.state-map {
+  stroke: #555;
+  fill: none;
 }
