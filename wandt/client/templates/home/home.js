@@ -5,7 +5,7 @@
 
     width = 960;
     height = 600;
-    path = d3.geo.path().projection(null);
+    projection = d3.geo.path().projection(null);
     svg = d3.select('.viz').append('svg')
       .attr('width', width)
       .attr('height', height);
@@ -15,7 +15,7 @@
 
       svg.append('path')
         .datum(topojson.mesh(mapData))
-        .attr('d', path);
+        .attr('d', projection);
 
       cities = Cities.find().fetch();
       svg.selectAll('.pin')
