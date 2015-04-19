@@ -13,9 +13,6 @@
 - Jasmine (unit and integration testing)
 - Bower (client dependency management)
   - D3.js (data visualization library) w/ TopoJSON
-- Gulp (task runner)
-  - Sass (stylesheet preprocessor) w/ Autoprefixer
-  - JSHint (javascript linting)
 
 <h3>Main External Integrations</h3>
 - Codeship (continuous integration) w/ Docker
