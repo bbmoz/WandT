@@ -1,8 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+  font-family: 'Inconsolata';
+  background-color: #112;
+}
+
+.d3 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.page-name {
+  color: #ccc;
+  font-size: 2em;
+}
+
+.viz {
+  display: inline-block;
+}
+
 circle {
   fill: steelblue;
 }
 
 .state-map {
-  stroke: #555;
+  stroke: #aaa;
   fill: none;
 }

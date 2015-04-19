@@ -26,7 +26,10 @@
       svg.selectAll('circle')
         .data(cities)
         .enter().append('circle')
-        .attr('r', 5)
+        .attr('r', function (point) {
+          var severityAvg = point.trafficData.severityAvg
+          return severityAvg * severityAvg;
+        })
         .attr('transform', function (point) {
           return 'translate(' +
             targetedProjection([point.longitude, point.latitude]) +

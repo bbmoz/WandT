@@ -13,5 +13,5 @@
     });
   }
 
-  Meteor.setInterval(queryForTrafficData, 3600000);
+  Meteor.setInterval(queryForTrafficData, 3000000);
 }());
