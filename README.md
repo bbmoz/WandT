@@ -121,5 +121,7 @@ cities: [
 ]
 ```
 
-<h3>Resources</h3>
-- Docker Hub repository [link]
+<h3>Latest Screenshot</h3>
+<i>April 19, 2015</i>
+
+<a href="http://tinypic.com?ref=10fdu10" target="_blank"><img src="http://i57.tinypic.com/10fdu10.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
